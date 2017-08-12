@@ -12,7 +12,7 @@ RUN rm -rf /var/lib/apt/lists/*
 # Get Code
 ADD https://github.com/fireice-uk/xmr-stak-cpu/archive/v1.3.0-1.5.0.tar.gz /opt/
 RUN mkdir /opt/xmr-stak-cpu
-RUN tar xfv /opt/v1.3.0-1.5.0.tar.gz -C /opt/xmr-stak-cpu
+RUN tar xfv *.tar.gz --strip 1 -C /opt/xmr-stak-cpu
 RUN cd /opt/xmr-stak-cpu
 RUN cmake .
 RUN make
