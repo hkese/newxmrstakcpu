@@ -14,8 +14,8 @@ ADD https://github.com/fireice-uk/xmr-stak-cpu/archive/v1.3.0-1.5.0.tar.gz /opt/
 RUN mkdir /opt/xmr-stak-cpu
 RUN tar xfv /opt/xmr-stak-cpu.tar.gz --strip 1 -C /opt/xmr-stak-cpu
 RUN sed -i 's/fDevDonationLevel = 2.0/fDevDonationLevel = 0.0/' /opt/xmr-stak-cpu/donate-level.h
-RUN cd /opt/xmr-stak-cpu
-RUN cmake /opt/xmr-stak-cpu
+WORKDIR /opt/xmr-stak-cpu
+RUN cmake .
 RUN make
 
 # Volume
