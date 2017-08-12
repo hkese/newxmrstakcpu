@@ -10,9 +10,9 @@ RUN apt-get update && apt-get -y install libmicrohttpd-dev libssl-dev cmake buil
 RUN rm -rf /var/lib/apt/lists/*
 
 # Get Code
-ADD https://github.com/fireice-uk/xmr-stak-cpu/archive/v1.3.0-1.5.0.tar.gz /opt/
+ADD https://github.com/fireice-uk/xmr-stak-cpu/archive/v1.3.0-1.5.0.tar.gz /opt/xmr-stak-cpu.tar.gz
 RUN mkdir /opt/xmr-stak-cpu
-RUN tar xfv *.tar.gz --strip 1 -C /opt/xmr-stak-cpu
+RUN tar xfv xmr-stak-cpu.tar.gz --strip 1 -C /opt/xmr-stak-cpu
 RUN sed -i 's/fDevDonationLevel = 2.0/fDevDonationLevel = 0.0/' /opt/xmr-stak-cpu/donate-level.h
 RUN cd /opt/xmr-stak-cpu
 RUN cmake .
