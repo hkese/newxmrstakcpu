@@ -20,7 +20,7 @@ RUN make
 
 # Volume
 VOLUME /config
-ADD https://raw.githubusercontent.com/kenayagi/docker-xmrstakcpu/master/xmr-stak-cpu.conf /config/xmr-stak-cpu.conf
+ADD https://raw.githubusercontent.com/kenayagi/docker-xmrstakcpu/master/config.txt /config/config.txt
 
 # Ports
 EXPOSE 8080
