@@ -16,7 +16,7 @@
 "giveup_limit" : 0,
 "verbose_level" : 4,
 "h_print_time" : 60,
-"daemon_mode" : false,
+"daemon_mode" : true,
 "output_file" : "",
 "httpd_port" : 8080,
 "prefer_ipv4" : true,
