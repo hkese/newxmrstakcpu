@@ -26,4 +26,4 @@ ADD https://raw.githubusercontent.com/kenayagi/docker-xmrstakcpu/master/config.t
 EXPOSE 8080
 
 # Command
-CMD ["/opt/xmr-stak-cpu/bin/xmr-stak-cpu", "/config/xmr-stak-cpu.conf"]
+CMD ["/opt/xmr-stak-cpu/bin/xmr-stak-cpu", "/config/config.txt"]
