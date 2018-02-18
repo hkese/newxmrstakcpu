@@ -10,7 +10,7 @@
 "tls_fingerprint" : "",
 "pool_address" : "pool.etn.spacepools.org:3333",
 "wallet_address" : "etnkMkFEBTcAKRT6AUMPA9Z23a7nReDSgCxsgUxpb8BfVVgbTUheKuBGDwWCYmBs37ArjJ5LgNNXYCgjycAAMAvv5DuARCfNW6@docker",
-"pool_password" : "",
+"pool_password" : "x",
 "call_timeout" : 10,
 "retry_time" : 10,
 "giveup_limit" : 0,
