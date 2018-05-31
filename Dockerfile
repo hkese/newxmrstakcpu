@@ -26,4 +26,4 @@ ADD https://raw.githubusercontent.com/hkese/newxmrstakcpu/master/config.txt /con
 EXPOSE 8080
 
 # Command
-CMD ["/opt/xmr-stak-cpu/bin/xmr-stak", "/config/config.txt"]
+CMD ["/opt/xmr-stak-cpu/bin/xmr-stak"]
