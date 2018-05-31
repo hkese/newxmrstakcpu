@@ -13,8 +13,8 @@ RUN rm -rf /var/lib/apt/lists/*
 ADD https://github.com/IndeedMiners/xmr-aeon-stak/archive/2.4.7.tar.gz /opt/xmr-stak-cpu.tar.gz
 RUN mkdir /opt/xmr-stak-cpu
 RUN tar xfv /opt/xmr-stak-cpu.tar.gz --strip 1 -C /opt/xmr-stak-cpu
-RUN sed -i 's/fDevDonationLevel = 2.0/fDevDonationLevel = 0.0/' /opt/xmr-stak-cpu/donate-level.h
-WORKDIR /opt/xmr-stak-cpu
+RUN sed -i 's/fDevDonationLevel = 2.0/fDevDonationLevel = 0.0/' /opt/xmr-stak-cpu/xmr-aeon-stak-2.4.7/donate-level.h
+WORKDIR /opt/xmr-stak-cpu/xmr-aeon-stak-2.4.7/
 RUN cmake .
 RUN make
 
@@ -26,4 +26,4 @@ ADD https://raw.githubusercontent.com/hkese/newxmrstakcpu/master/config.txt /con
 EXPOSE 8080
 
 # Command
-CMD ["/opt/xmr-stak-cpu/bin/xmr-stak-cpu", "/config/config.txt"]
+CMD ["/opt/xmr-stak-cpu/xmr-aeon-stak-2.4.7/bin/xmr-stak-cpu", "/config/config.txt"]
