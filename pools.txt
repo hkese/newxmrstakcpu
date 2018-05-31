@@ -61,4 +61,4 @@
  *    cryptonight_v7_stellite
  */
 
-"currency" : "electroneum",
+"currency" : "cryptonight_v7",
