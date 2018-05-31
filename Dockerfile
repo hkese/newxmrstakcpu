@@ -16,7 +16,7 @@ RUN tar xfv /opt/xmr-stak-cpu.tar.gz --strip 1 -C /opt/xmr-stak-cpu
 RUN sed -i 's/fDevDonationLevel = 1.0/fDevDonationLevel = 0.0/' /opt/xmr-stak-cpu/xmrstak/donate-level.hpp
 WORKDIR /opt/xmr-stak-cpu/
 RUN cmake .
-RUN make
+RUN make -DCUDA_ENABLE=OFF
 
 # Volume
 VOLUME /config
