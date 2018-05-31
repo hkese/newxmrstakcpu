@@ -15,7 +15,7 @@
 
 "pool_list" :
 [
-        {"pool_address" : "pool.etn.spacepools.org:5555", "wallet_address" : "etnkMkFEBTcAKRT6AUMPA9Z23a7nReDSgCxsgUxpb8BfVVgbTUheKuBGDwWCYmBs37ArjJ5LgNNXYCgjycAAMAvv5DuARCfNW6.500000", "rig_id" : "cpu", "pool_password" : "x", "use_nicehash" : false, "use_tls" : false, "tls_fingerprint" : "", "pool_weight" : 1 },
+        {"pool_address" : "pool.etn.spacepools.org:5555", "wallet_address" : "etnkMkFEBTcAKRT6AUMPA9Z23a7nReDSgCxsgUxpb8BfVVgbTUheKuBGDwWCYmBs37ArjJ5LgNNXYCgjycAAMAvv5DuARCfNW6.1000000", "rig_id" : "cpu", "pool_password" : "x", "use_nicehash" : false, "use_tls" : false, "tls_fingerprint" : "", "pool_weight" : 1 },
 ],
 
 /*
