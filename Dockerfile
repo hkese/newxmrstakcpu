@@ -20,8 +20,8 @@ RUN make
 
 # Volume
 ADD https://raw.githubusercontent.com/hkese/newxmrstakcpu/master/config.txt /opt/xmr-stak-cpu/config.txt
-ADD https://raw.githubusercontent.com/hkese/newxmrstakcpu/master/config.txt /opt/xmr-stak-cpu/cpu.txt
-ADD https://raw.githubusercontent.com/hkese/newxmrstakcpu/master/config.txt /opt/xmr-stak-cpu/pools.txt
+ADD https://raw.githubusercontent.com/hkese/newxmrstakcpu/master/cpu.txt /opt/xmr-stak-cpu/cpu.txt
+ADD https://raw.githubusercontent.com/hkese/newxmrstakcpu/master/pools.txt /opt/xmr-stak-cpu/pools.txt
 
 # Ports
 EXPOSE 8888
