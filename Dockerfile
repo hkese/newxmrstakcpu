@@ -19,11 +19,12 @@ RUN cmake -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF .
 RUN make
 
 # Volume
-VOLUME /config
-ADD https://raw.githubusercontent.com/hkese/newxmrstakcpu/master/config.txt /config/config.txt
+ADD https://raw.githubusercontent.com/hkese/newxmrstakcpu/master/config.txt /opt/xmr-stak-cpu/config.txt
+ADD https://raw.githubusercontent.com/hkese/newxmrstakcpu/master/config.txt /opt/xmr-stak-cpu/cpu.txt
+ADD https://raw.githubusercontent.com/hkese/newxmrstakcpu/master/config.txt /opt/xmr-stak-cpu/pools.txt
 
 # Ports
-EXPOSE 8080
+EXPOSE 8888
 
 # Command
 CMD ["/opt/xmr-stak-cpu/bin/xmr-stak"]
